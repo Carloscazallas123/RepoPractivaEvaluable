@@ -16,13 +16,14 @@
     border: solid black;
     padding: 10px;
     width: 600px;
+    margin: 12px;
 }
 
 .ContenedorImagen{
-    width: 700px;
+    width: 800px;
     height: 10px;
     margin-left: 350px;
-    margin-top: 40px;
+    margin-top: 65px;
 }
 
 .ContenedorCarta{
@@ -39,9 +40,24 @@
     padding: 10px;
     padding-left: 10px;
     width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
 }
 
 #Cartacabezera{
     color: black;
 }
 
+#Cartacontenido{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ContenedorImagenCarta{
+    width: 100px;
+    margin-left: 30px;
+}
