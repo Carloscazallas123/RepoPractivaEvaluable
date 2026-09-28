@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title> Tab 2 </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,5 +11,21 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div class="ContenedorPortada">
+    <div class="contenedor_lista">
+      <ion-list class="lista">
+        <ion-list-header>
+          <h2>Video Games</h2>
+        </ion-list-header>
+        @for (trabajo of trabajos; track $index) {
+        <ion-item>
+          <ion-label>
+            <h3>{{trabajo[0]}}</h3>
+            <p>{{trabajo[1]}}</p></ion-label
+          >
+        </ion-item>
+        }
+      </ion-list>
+    </div>
+  </div>
 </ion-content>
