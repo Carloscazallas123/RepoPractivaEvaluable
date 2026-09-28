@@ -12,12 +12,23 @@
       <ion-title size="large">Tab 3</ion-title>
     </ion-toolbar>
   </ion-header>
-  <div class="ContenedorPortada">
-      <ion-card >
+<div class="ContenedorPortada">
+  @for (personaje of personajes; track $index) {
+    <ion-card class="carousel">
+      <div>
+        <ion-img [src]="personaje.ruta"></ion-img>
+      </div>
+      <div class="contendorTexto">
+      <ion-card-header>
+        <ion-card-subtitle>Personaje de los 12 Trabajos</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-title>{{ personaje.nombre }}</ion-card-title>
+      <ion-card-content>
+        <p>{{ personaje.descripcion }}</p>
+      </ion-card-content>
+      </div>
+    </ion-card>
+  }
+</div>
 
-        </ion-card>
-  </div>
-  
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
 </ion-content>
