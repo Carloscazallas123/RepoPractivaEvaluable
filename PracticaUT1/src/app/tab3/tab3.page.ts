@@ -11,9 +11,29 @@ import { ExploreContainerComponent } from '../explore-container/explore-containe
 })
 export class Tab3Page {
 
-  Dioses = [ 'Hera','Atenea','Hermes','Helios'];
-  Humanos = [ 'Molorco','Euristeo', 'Admete'];
-  
+  PersonaJE = [ 'Hera','Atenea','Hermes','Helios','Molorco','Euristeo', 'Admete'];
+
+  rutas = [ 
+  './../../assets/img/Hera.png',
+  './../../assets/img/Atenea.png',
+  './../../assets/img/Hermes.png',
+  './../../assets/img/Helios.png',
+  './../../assets/img/Molorco.png',
+  './../../assets/img/Euristeo.png',
+  './../../assets/img/Admete.png',
+  ]
+
+  descripcion = [
+  'Diosa del matrimonio y reina de los dioses. Esposa de Zeus y enemiga de Hércules.',
+  'Diosa de la sabiduría, la estrategia y la guerra justa. Ayuda a Hercules.',
+  'Mensajero de los dioses, dios del comercio y los viajeros. Destaca por su gran velocidad.',
+  'Dios del Sol, que recorre el cielo cada día conduciendo su carro solar.',
+  'Humilde campesino que acogió a Hércules antes de enfrentarse al león de Nemea.',
+  'Rey de Micenas que ordenó a Hércules realizar sus famosos doce trabajos.',
+  'Hija de Euristeo y sacerdotisa de Hera. Hércules debía conseguir su cinturón en uno de sus trabajos.'
+
+  ]
+
 
   constructor() {}
 }
