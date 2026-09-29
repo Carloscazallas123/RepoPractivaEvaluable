@@ -1,0 +1,28 @@
+ion-tab-bar {
+  // Fondo
+  --background: #1e1e2e;
+  --border: none;
+
+  // Flotante con bordes redondeados
+  border-radius: 16px;
+  width: 92%;
+  margin: 0 auto;
+  bottom: 12px;
+  position: relative;
+}
+
+ion-tab-button {
+  // Color cuando NO está seleccionada
+  --color: rgba(255, 255, 255, 0.5);
+
+  // Color cuando SÍ está seleccionada
+  --color-selected: #488aff;
+
+  // Icono
+  --icon-color: rgba(255, 255, 255, 0.5);
+  --icon-color-selected: #488aff;
+
+  // Texto
+  --label-color: rgba(255, 255, 255, 0.5);
+  --label-color-selected: #488aff;
+}   
