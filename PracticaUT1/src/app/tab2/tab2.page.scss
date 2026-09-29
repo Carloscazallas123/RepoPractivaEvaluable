@@ -3,7 +3,6 @@
     background-image: url('./../../assets/img/FondoWebb.png');
     background-size: cover;
     background-repeat: no-repeat;
-    justify-content: center;
     align-items: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -14,15 +13,15 @@
     border-radius: 30px;
     background-color: rgb(172, 118, 64);
     padding: 10px;
+    margin-left: 200px;
+    margin-top: -180px;
 }
 .lista{
     border-radius: 20px;
-    background: rgb(54, 40, 25,0.9);
+    background: #1e1e30;
 }
 ion-list-header{
     --background: transparent;
-    align-items: center;
-    justify-content: center;
 }
 
 ion-item {
