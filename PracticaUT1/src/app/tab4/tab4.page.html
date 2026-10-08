@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Alumno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">tab4</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div  class="ContenedorPortada">
+  <ion-card class="Carta">
+    <div>
+      <ion-card-header>
+        <ion-card-title><p>Soy {{nombre}}</p></ion-card-title>
+        <ion-card-subtitle>Estoy en el curso {{curso}}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Estoy haciendo el modulo de {{modulo}}</p>
+        <p>
+          y para ello estoy haciendo una pagia de ionic con tematica de
+          {{tematica}}
+        </p>
+        <ion-button (click)="iralawiki()">WikiPedia Oficial </ion-button>
+      </ion-card-content>
+    </div>
+  </ion-card>
+  </div>
+</ion-content>

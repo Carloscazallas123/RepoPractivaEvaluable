@@ -1,46 +1,39 @@
-<ion-header [translucent]="true" style="background-color: #1e1e30;;">
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Introducción
-    </ion-title>
+    <ion-title>Detalle curioso</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Introducción</ion-title>
+      <ion-title size="large">detalle</ion-title>
     </ion-toolbar>
   </ion-header>
-
   <div class="ContenedorPortada">
     <div class="ContenedorDescripcion">
       <div class="ContenedorTexto">
-         <p>{{introduccion}}
-          </p>
+         <h1>{{titulo}}
+          </h1>
       </div>
       <div class="ContenedorCarta">
-        @for (descripcion of descripciones; track $index) {
+        
         <ion-card class="Carta">
           <ion-title id="Cartatitulo">
-            {{descripcion[0]}}
           </ion-title>
           <ion-card-content id="Cartacontenido">
-              <p>{{descripcion[1]}}</p>
+              <p>{{detalle}}</p>
               <div style="display: flex;">
                 <div style="margin-top: 50px;">
                   <ion-button style="--background: rgb(230, 177, 71); --color: rgb(5, 5, 5);"
-                  (click)="iralawiki()">
-                WikiPedia Oficial
+                  (click)="irTab2()">
+                    Volver
                   </ion-button>
-                </div>
-                <div class="ContenedorImagenCarta">
-                  <ion-img src="./../../assets/img/HerculesCarta.png"></ion-img>
                 </div>
               </div>
           </ion-card-content>
         </ion-card>
-      }
+      
       </div>
     </div>
     <div class="ContenedorImagen">

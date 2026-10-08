@@ -1,4 +1,4 @@
-<ion-header [translucent]="true" style="background-color: #1e1e30;;">
+<ion-header [translucent]="true" style="background-color: #1e1e30">
   <ion-toolbar>
     <ion-title>Las 12 Tareas de Hercules </ion-title>
   </ion-toolbar>
@@ -20,12 +20,14 @@
         @for (trabajo of trabajos; track $index) {
         <ion-item>
           <ion-label>
-            <h2>{{trabajo[0]}}</h2>
-            <p>{{trabajo[1]}}</p></ion-label
+            <h2>{{trabajo[0]}} {{trabajo[1]}}</h2>
+            <p>{{trabajo[2]}}</p></ion-label
           >
         </ion-item>
         }
       </ion-list>
+      <ion-button (click)="irDetalles()" style="--background: rgb(230, 177, 71); --color: rgb(5, 5, 5);"> Detalles </ion-button>
     </div>
+    
   </div>
 </ion-content>
